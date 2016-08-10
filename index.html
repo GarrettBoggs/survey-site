@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Survey</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" >
+    <link href="css/styles.css" rel="stylesheet" type="text/css" >
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+
+  <body>
+    <h1>The survey</h1>
+    <div class="container">
+      <div id="info">
+        <form>
+          <div class="form-group">
+            <label for="userName">Input name</label>
+            <input id="userName" class="form-control" type="text">
+          </div>
+          <h1>Whats your gender</h1>
+          <div class="radio">
+            <label>
+              <input type="radio" name="gender" value="Male">
+              Male
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="gender" value="Female">
+              Female
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="gender" value="Zombie">
+              Zombie
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="gender" value="Turtle">
+              Turtle
+            </label>
+          </div>
+
+          <h1> Which is the best of the following bands? </h1>
+          <div class="radio">
+            <label>
+              <input type="radio" name="band" value="Van Halen">
+              Van Halen
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="band" value="Cold Play">
+              Cold Play
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="band" value="Nirvana">
+              Nirvana
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="band" value="Maroon 5">
+              Maroon 5
+            </label>
+          </div>
+          <div class="form-group">
+
+            <div class="color1">
+            <label for="color">What is your favorite color?</label>
+            <h3>\/ Pick color on color bar \/</h3>
+            </div>
+            <input id="color" class="form-control" type="color">
+          </div>
+          <h1>Which is your favorite drink?</h1>
+          <select class="form-control" id="beverage">
+            <option value="">Choose One</option>
+            <option>Coffee</option>
+            <option>Tea</option>
+            <option>Red Bull</option>
+            <option>Monster</option>
+          </select>
+
+           <button type="submit" class="btn">Show me the story!</button>
+        </form>
+      </div>
+    </div>
+
+  <div class="output">
+      <div id="output">
+      <p> Hello <span class="name"></span> <br></p>
+      <p> You are a <span class="gender"></span></p>
+      <p> Your favorite band is <span class="band"></span></p>
+      <p> Your favorite drink is <span class="beverage"></span></p>
+
+    </div>
+  </div>
+  </body>
+</html>
